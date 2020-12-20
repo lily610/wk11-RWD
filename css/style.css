@@ -17,10 +17,21 @@ html{
 
 /*RWD---------------------------*/
 @media (max-width: 992px) {
-	nav .form-inline{
+	/*nav .form-inline{
 		margin-left:60%; 
+	}*/
+	.login{
+		display: none;
 	}
-
+	.search{
+		visibility:hidden;
+	}
+	.nlLogin{
+		display: inline!important;
+	}
+	.searchList{
+		visibility:visible!important;
+	}
 }
 
 @media (min-width: 768px) {
@@ -34,6 +45,13 @@ html{
 
 	.card{
 		margin-bottom: 5%;
+	}
+	.nlLogin{
+		display: none;
+	}
+
+	.searchList{
+		visibility:hidden;
 	}
 
 }
@@ -54,6 +72,10 @@ html{
 	.bw_name, .card{
 		margin-bottom: 5%;
 	}
+	.searchList{
+		visibility:visible;
+	}
+
 }
 
 @media (max-width: 425px) {
@@ -112,7 +134,7 @@ html{
 }
 
 .navbar-nav{
-	width: 50%;
+	width: 80%;
 }
 
 .nav-item2{
